@@ -2,7 +2,8 @@ var express = require('express');
 var app = express();
 app.use(express.logger());
 
-var fileData = fs.readFileSync('index.html', 'utf8');
+//var fileData = fs.readFileSync('index.html', 'utf8');
+var fileData = 'Something else';
 
 app.get('/', function(request, response) {
   //response.send('Hello World 3!');
